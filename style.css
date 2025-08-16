@@ -1,0 +1,83 @@
+.figure {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.figure img{
+    opacity: 1.0;
+    transition: opacity 0.5s;
+}
+
+.figure:hover img{
+    opacity: 0.5;
+}
+
+.figure h4{
+    transition: color 0.5s;
+}
+
+.figure:hover h4 {
+    color: rgb(56, 56, 56); /* blue colors for links too */
+}
+
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    padding: 1rem;
+    border-top: 1px solid rgb(56, 56, 56);
+    text-align: center;
+}
+.body {
+    background-color: rgb(15, 15, 15);
+}
+.main {
+    background-color: rgb(22, 22, 22);
+    flex: 1;
+    padding: 1rem;
+}
+.navbar {
+    padding: 1rem;
+    border-bottom: 1px solid rgb(56, 56, 56);
+}
+.circle-logo {
+  border-radius: 50%;
+  border-style: outset;
+  border: 2px solid white;
+  object-fit: cover;
+}
+.primary .col {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.primary .figure-img {
+    width: 100%;
+}
+
+.secondary .col {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.secondary .figure-img {
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    .navbar .container-fluid {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+}
