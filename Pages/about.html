@@ -20,14 +20,31 @@
             <h1 class="text-center text-white">Renan R. Moura</h1>
             <h2 class="text-center text-white-50">Game Developer</h2>
           </div>
-          <ul class="nav nav-underline">
-            <li class="nav-item">
-              <a class="nav-link text-white-50" href="../index.html">Trabalho</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white active" aria-current="page" href="#">Sobre</a>
-            </li>
-          </ul>
+          <div class="d-flex flex-column align-items-center align-items-sm-end">
+            <div class="dropdown mb-1">
+              <button class="btn btn-sm btn-outline-light dropdown-toggle px-2 py-1" type="button" id="dropdownLang" data-bs-toggle="dropdown" aria-expanded="false" title="Selecionar idioma">
+                Idioma
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownLang">
+                <li><a class="dropdown-item" href="?lang=pt">Português</a></li>
+                <li><a class="dropdown-item" href="?lang=en">English</a></li>
+              </ul>
+            </div>
+            <ul class="nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link text-white-50" href="../index.html">
+                  <span data-lang="pt">Trabalho</span>
+                  <span data-lang="en" style="display:none;">Work</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white active" aria-current="page" href="#">
+                  <span data-lang="pt">Sobre</span>
+                  <span data-lang="en" style="display:none;">About</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -42,20 +59,41 @@
           <div class="col-12 col-md-9">
             <div class="container-fluid">
               <div class="overlay-block">
-                <h3>Sobre Mim</h3>
-                <p>
-                  Então para contar um pouco sobre mim, e como eu comecei a me interessar por desenvolvimento de jogos, acho que é valido falar que eu eu era uma criança muito criativa. E desde pequeno adorava a possibilidade de criar algo, desde desenhos até historias que eu fazia brincando com meus brinquedos. Com o tempo, esse interesse por criação foi se intensificando, e eu comecei a explorar diferentes formas de arte e design. Foi ai que eu pedi pedi para meus pais uma mesa digitalizadora, e com ela comecei a aprender a desenhar digitalmente, o que me levou até a animação 2D. E futuramente, ao curso de Jogos Digitais na faculdade, onde tive meu primeiro contato com desenvolvimento de jogos.
+                <h3 id="about-title">
+                  <span data-lang="pt">Sobre Mim</span>
+                  <span data-lang="en" style="display:none;">About Me</span>
+                </h3>
+                <p id="about-text-1">
+                  <span data-lang="pt">
+                    Então para contar um pouco sobre mim, e como eu comecei a me interessar por desenvolvimento de jogos, acho que é valido falar que eu eu era uma criança muito criativa. E desde pequeno adorava a possibilidade de criar algo, desde desenhos até historias que eu fazia brincando com meus brinquedos. Com o tempo, esse interesse por criação foi se intensificando, e eu comecei a explorar diferentes formas de arte e design. Foi ai que eu pedi para meus pais uma mesa digitalizadora, e com ela comecei a aprender a desenhar digitalmente, o que me levou até a animação 2D. E futuramente, ao curso de Jogos Digitais na faculdade, onde tive meu primeiro contato com desenvolvimento de jogos.
+                  </span>
+                  <span data-lang="en" style="display:none;">
+                    To tell you a bit about myself and how I became interested in game development, I think it's worth mentioning that I was a very creative child. Since I was little, I loved the possibility of creating something, from drawings to stories I made while playing with my toys. Over time, this interest in creation intensified, and I started exploring different forms of art and design. That's when I asked my parents for a drawing tablet, and with it, I began learning digital drawing, which led me to 2D animation. Eventually, I enrolled in a Digital Games course at university, where I had my first contact with game development.
+                  </span>
                 </p>
-                <p>
-                  Durante a faculdade, tive a oportunidade de aprender sobre diversas áreas do desenvolvimento de jogos, desde programação até design de games e arte. Foi um período muito enriquecedor, onde pude explorar minha criatividade e desenvolver minhas habilidades técnicas. Além disso, participei de vários projetos em equipe, e tive o inicio da minha carreira profissional, fazendo estágios e trabalhando em empresas de jogos. Esses projetos me ajudaram a entender a importância do trabalho em equipe, comunicação e colaboração no desenvolvimento de jogos. 
+                <p id="about-text-2">
+                  <span data-lang="pt">
+                    Durante a faculdade, tive a oportunidade de aprender sobre diversas áreas do desenvolvimento de jogos, desde programação até design de games e arte. Foi um período muito enriquecedor, onde pude explorar minha criatividade e desenvolver minhas habilidades técnicas. Além disso, participei de vários projetos em equipe, e tive o inicio da minha carreira profissional, fazendo estágios e trabalhando em empresas de jogos. Esses projetos me ajudaram a entender a importância do trabalho em equipe, comunicação e colaboração no desenvolvimento de jogos. 
+                  </span>
+                  <span data-lang="en" style="display:none;">
+                    During college, I had the opportunity to learn about various areas of game development, from programming to game design and art. It was a very enriching period, where I could explore my creativity and develop my technical skills. I also participated in several team projects and started my professional career, doing internships and working at game companies. Those projects helped me understand the importance of teamwork, communication, and collaboration in game development.
+                  </span>
                 </p>
               </div>
             </div>
             <div class="container-fluid">
               <div class="overlay-block">
-                <h3>Contato</h3>
-                <p>
+                <h3 id="contact-title">
+                  <span data-lang="pt">Contato</span>
+                  <span data-lang="en" style="display:none;">Contact</span>
+                </h3>
+                <p id="contact-text">
+                  <span data-lang="pt">
                     Se você quiser entrar em contato, seja para colaboração, feedback ou apenas conversar sobre jogos, fique à vontade para me enviar um e-mail em <a href="mailto:renan.rm31@gmail.com">renan.rm31@gmail.com</a> ou conectar-se comigo nas redes sociais <a href="https://www.linkedin.com/in/renan-r-moura-011497197/" target="_blank">LinkedIn</a> e <a href="https://www.instagram.com/renan.r.moura?igsh=bnJrejFsb3lqNWZy" target="_blank">Instagram</a>.
+                  </span>
+                  <span data-lang="en" style="display:none;">
+                    If you want to get in touch, whether for collaboration, feedback, or just to talk about games, feel free to send me an email at <a href="mailto:renan.rm31@gmail.com">renan.rm31@gmail.com</a> or connect with me on social media <a href="https://www.linkedin.com/in/renan-r-moura-011497197/" target="_blank">LinkedIn</a> and <a href="https://www.instagram.com/renan.r.moura?igsh=bnJrejFsb3lqNWZy" target="_blank">Instagram</a>.
+                  </span>
                 </p>
               </div>
             </div>
@@ -66,7 +104,10 @@
     <footer class="footer container">
       <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center w-100">
         <a href="mailto:renan.rm31@gmail.com" class="text-white mb-2 mb-sm-0">renan.rm31@gmail.com</a>
-        <span class="text-white-50">Feito por Renan R. Moura</span>
+        <div class="text-white-50">
+          <span data-lang="pt">Feito por Renan R. Moura</span>
+          <span data-lang="en" style="display:none;">Made by Renan R. Moura</span>
+        </div>
       </div>
     </footer>
   </div>

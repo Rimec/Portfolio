@@ -70,6 +70,17 @@ html, body {
     width: 100%;
 }
 
+.dropdown .btn-outline-light {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+.dropdown .btn-outline-light:focus,
+.dropdown .btn-outline-light:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
 @media (max-width: 576px) {
     .navbar {
         padding: 0.5rem;

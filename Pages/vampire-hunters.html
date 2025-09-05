@@ -13,21 +13,38 @@
     <header>
       <nav class="navbar container">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="../index.html">
-            <img src="../Content/R-Icon.svg" alt="Logo" width="75" height="75" class="d-inline-block align-text-center circle-logo">
+          <a class="navbar-brand" href="../index.html" title="Home">
+            <img src="../Content/R-Icon.svg" alt="Renan R. Moura Logo" width="75" height="75" class="d-inline-block align-text-center circle-logo">
           </a>
           <div>
-            <h1 class="text-center text-white"> Renan R. Moura </h1>
+            <h1 class="text-center text-white">Renan R. Moura</h1>
             <h2 class="text-center text-white-50">Game Developer</h2>
           </div>
-          <ul class="nav nav-underline">
-            <li class="nav-item">
-              <a class="nav-link text-white active" aria-current="page" href="#">Trabalho</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white-50" href="about.html">Sobre</a>
-            </li>
-          </ul>
+          <div class="d-flex flex-column align-items-center align-items-sm-end">
+            <div class="dropdown mb-1">
+              <button class="btn btn-sm btn-outline-light dropdown-toggle px-2 py-1" type="button" id="dropdownLang" data-bs-toggle="dropdown" aria-expanded="false" title="Selecionar idioma">
+                Idioma
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownLang">
+                <li><a class="dropdown-item" href="?lang=pt">Português</a></li>
+                <li><a class="dropdown-item" href="?lang=en">English</a></li>
+              </ul>
+            </div>
+            <ul class="nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link text-white active" aria-current="page" href="#">
+                  <span data-lang="pt">Trabalho</span>
+                  <span data-lang="en" style="display:none;">Work</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" aria-current="page" href="../Pages/about.html">
+                  <span data-lang="pt">Sobre</span>
+                  <span data-lang="en" style="display:none;">About</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -71,14 +88,29 @@
             <img class="m-2" src="../Content/tyrus-svn2.png" height="30px" alt="">
           </div>
           <div style="text-align: justify;">
-            <p>
-              O jogo "Vampire Hunters" é um jogo de ação e tiro em primeira pessoa, ambientado em um mundo com temática steampunk onde os jogadores assumem o papel de caçadores de vampiros. O jogo combina elementos de combate intenso, oferecendo uma experiência envolvente e desafiadora.
+            <p id="vhunters-desc">
+              <span data-lang="pt">
+                O jogo "Vampire Hunters" é um jogo de ação e tiro em primeira pessoa, ambientado em um mundo com temática steampunk onde os jogadores assumem o papel de caçadores de vampiros. O jogo combina elementos de combate intenso, oferecendo uma experiência envolvente e desafiadora.
+              </span>
+              <span data-lang="en" style="display:none;">
+                The game "Vampire Hunters" is a first-person action and shooting game set in a steampunk-themed world where players take on the role of vampire hunters. The game combines elements of intense combat, offering an engaging and challenging experience.
+              </span>
             </p>
-            <p>
-              Como motor grafico, o jogo utiliza a Unity, que facilitou no desenvolvimento por se tratar de uma equipe pequena, permitindo uma rápida iteração e prototipagem. A arte do jogo é feita em 3D estilo retrô, o que traz um charme nostálgico e único ao visual do jogo, complementando a atmosfera sombria e steampunk.
+            <p id="vhunters-dev">
+              <span data-lang="pt">
+                Como motor grafico, o jogo utiliza a Unity, que facilitou no desenvolvimento por se tratar de uma equipe pequena, permitindo uma rápida iteração e prototipagem. A arte do jogo é feita em 3D estilo retrô, o que traz um charme nostálgico e único ao visual do jogo, complementando a atmosfera sombria e steampunk.
+              </span>
+              <span data-lang="en" style="display:none;">
+                As the graphics engine, the game uses Unity, which facilitated development due to being a small team, allowing for rapid iteration and prototyping. The game's art is done in a retro 3D style, which brings a nostalgic and unique charm to the game's visuals, complementing the dark and steampunk atmosphere.
+              </span>
             </p>
-            <p>
-              No desenvolvimento, atuei como programador, sendo responsável pela implementação de diversas mecânicas de jogabilidade, incluindo sistemas de efeitos visuais (VFX), mini mapa, armas, modificadores e interface de usuário. Também trabalhei na otimização do desempenho, assegurando uma experiência fluida para todos os jogadores. Além disso, adaptei a interface e os controles para garantir total compatibilidade e conforto no Steam Deck, proporcionando uma jogabilidade responsiva nesse dispositivo.
+            <p id="vhunters-role">
+              <span data-lang="pt">
+                No desenvolvimento, atuei como programador, sendo responsável pela implementação de diversas mecânicas de jogabilidade, incluindo sistemas de efeitos visuais (VFX), mini mapa, armas, modificadores e interface de usuário. Também trabalhei na otimização do desempenho, assegurando uma experiência fluida para todos os jogadores. Além disso, adaptei a interface e os controles para garantir total compatibilidade e conforto no Steam Deck, proporcionando uma jogabilidade responsiva nesse dispositivo.
+              </span>
+              <span data-lang="en" style="display:none;">
+                In development, I served as a programmer, responsible for implementing various gameplay mechanics, including visual effects (VFX) systems, mini-map, weapons, modifiers, and user interface. I also worked on performance optimization, ensuring a smooth experience for all players. Additionally, I adapted the interface and controls to ensure full compatibility and comfort on the Steam Deck, providing responsive gameplay on that device.
+              </span>
             </p>
           </div>
           <iframe class="steam-embed" width="100%" height="187" src="https://store.steampowered.com/widget/2206270/" frameborder="0"></iframe>
@@ -88,7 +120,10 @@
     <footer class="footer container">
       <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center w-100">
         <a href="mailto:renan.rm31@gmail.com" class="text-white mb-2 mb-sm-0">renan.rm31@gmail.com</a>
-        <span class="text-white-50">Feito por Renan R. Moura</span>
+        <div class="text-white-50">
+          <span data-lang="pt">Feito por Renan R. Moura</span>
+          <span data-lang="en" style="display:none;">Made by Renan R. Moura</span>
+        </div>
       </div>
     </footer>
   </div>

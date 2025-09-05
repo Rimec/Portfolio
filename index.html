@@ -20,14 +20,31 @@
             <h1 class="text-center text-white">Renan R. Moura</h1>
             <h2 class="text-center text-white-50">Game Developer</h2>
           </div>
-          <ul class="nav nav-underline">
-            <li class="nav-item">
-              <a class="nav-link text-white active" aria-current="page" href="#">Trabalho</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white-50" href="Pages/about.html">Sobre</a>
-            </li>
-          </ul>
+          <div class="d-flex flex-column align-items-center align-items-sm-end">
+            <div class="dropdown mb-1">
+              <button class="btn btn-sm btn-outline-light dropdown-toggle px-2 py-1" type="button" id="dropdownLang" data-bs-toggle="dropdown" aria-expanded="false" title="Selecionar idioma">
+                Idioma
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownLang">
+                <li><a class="dropdown-item" href="?lang=pt">Português</a></li>
+                <li><a class="dropdown-item" href="?lang=en">English</a></li>
+              </ul>
+            </div>
+            <ul class="nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link text-white active" aria-current="page" href="#">
+                  <span data-lang="pt">Trabalho</span>
+                  <span data-lang="en" style="display:none;">Work</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" aria-current="page" href="Pages/about.html">
+                  <span data-lang="pt">Sobre</span>
+                  <span data-lang="en" style="display:none;">About</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -72,7 +89,10 @@
     <footer class="footer container">
       <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center w-100">
         <a href="mailto:renan.rm31@gmail.com" class="text-white mb-2 mb-sm-0">renan.rm31@gmail.com</a>
-        <span class="text-white-50">Feito por Renan R. Moura</span>
+        <div class="text-white-50">
+          <span data-lang="pt">Feito por Renan R. Moura</span>
+          <span data-lang="en" style="display:none;">Made by Renan R. Moura</span>
+        </div>
       </div>
     </footer>
   </div>

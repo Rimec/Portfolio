@@ -13,21 +13,38 @@
     <header>
       <nav class="navbar container">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="../index.html">
-            <img src="../Content/R-Icon.svg" alt="Logo" width="75" height="75" class="d-inline-block align-text-center circle-logo">
+          <a class="navbar-brand" href="../index.html" title="Home">
+            <img src="../Content/R-Icon.svg" alt="Renan R. Moura Logo" width="75" height="75" class="d-inline-block align-text-center circle-logo">
           </a>
           <div>
-            <h1 class="text-center text-white"> Renan R. Moura </h1>
+            <h1 class="text-center text-white">Renan R. Moura</h1>
             <h2 class="text-center text-white-50">Game Developer</h2>
           </div>
-          <ul class="nav nav-underline">
-            <li class="nav-item">
-              <a class="nav-link text-white active" aria-current="page" href="#">Trabalho</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white-50" href="about.html">Sobre</a>
-            </li>
-          </ul>
+          <div class="d-flex flex-column align-items-center align-items-sm-end">
+            <div class="dropdown mb-1">
+              <button class="btn btn-sm btn-outline-light dropdown-toggle px-2 py-1" type="button" id="dropdownLang" data-bs-toggle="dropdown" aria-expanded="false" title="Selecionar idioma">
+                Idioma
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownLang">
+                <li><a class="dropdown-item" href="?lang=pt">Português</a></li>
+                <li><a class="dropdown-item" href="?lang=en">English</a></li>
+              </ul>
+            </div>
+            <ul class="nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link text-white active" aria-current="page" href="#">
+                  <span data-lang="pt">Trabalho</span>
+                  <span data-lang="en" style="display:none;">Work</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white-50" aria-current="page" href="../Pages/about.html">
+                  <span data-lang="pt">Sobre</span>
+                  <span data-lang="en" style="display:none;">About</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -71,14 +88,29 @@
             <img class="m-2" src="../Content/tyrus-svn2.png" height="30px" alt="">
           </div>
           <div style="text-align: justify;">
-            <p>
-              BIT.TRIP RERUNNER é um jogo de plataforma e corrida desenvolvido pela Choice Provisions em conjunto com a Gamecraft, conhecido por sua jogabilidade rítmica e estética vibrante. O jogo combina elementos de ação e música, desafiando os jogadores a completar níveis enquanto sincronizam seus movimentos com a trilha sonora.
+            <p id="brerunner-desc">
+              <span data-lang="pt">
+                BIT.TRIP RERUNNER é um jogo de plataforma e corrida desenvolvido pela Choice Provisions em conjunto com a Gamecraft, conhecido por sua jogabilidade rítmica e estética vibrante. O jogo combina elementos de ação e música, desafiando os jogadores a completar níveis enquanto sincronizam seus movimentos com a trilha sonora.
+              </span>
+              <span data-lang="en" style="display:none;">
+                BIT.TRIP RERUNNER is a platformer and runner game developed by Choice Provisions in collaboration with Gamecraft, known for its rhythmic gameplay and vibrant aesthetics. The game combines action and music elements, challenging players to complete levels while synchronizing their movements with the soundtrack.
+              </span>
             </p>
-            <p>
-              Durante o desenvolvimento, em conjunto com a equipe da Gamecraft trabalhei com a Unreal Engine 5, que proporcionou uma base sólida para a criação de gráficos impressionantes e mecânicas de jogo complexas. A arte do jogo é feita em 3D, com um estilo visual que combina elementos retro e modernos, criando uma experiência visual única e envolvente.
+            <p id="brerunner-dev">
+              <span data-lang="pt">
+                Durante o desenvolvimento, em conjunto com a equipe da Gamecraft trabalhei com a Unreal Engine 5, que proporcionou uma base sólida para a criação de gráficos impressionantes e mecânicas de jogo complexas. A arte do jogo é feita em 3D, com um estilo visual que combina elementos retro e modernos, criando uma experiência visual única e envolvente.
+              </span>
+              <span data-lang="en" style="display:none;">
+                During development, together with the Gamecraft team, I worked with Unreal Engine 5, which provided a solid foundation for creating impressive graphics and complex game mechanics. The game's art is done in 3D, with a visual style that combines retro and modern elements, creating a unique and immersive visual experience.
+              </span>
             </p>
-            <p>
-              NO jogo, atuei como programador, sendo responsável pela integração e ajuste de controles, otimizando a jogabilidade tanto para teclado quanto para gamepads. Além disso, participei da implementação de efeitos sonoros (SFX), assegurando sua correta sincronização com as ações do jogo. Também contribuí para a adaptação do jogo a diferentes resoluções de tela, visando uma apresentação visual consistente em múltiplos dispositivos.
+            <p id="brerunner-role">
+              <span data-lang="pt">
+                NO jogo, atuei como programador, sendo responsável pela integração e ajuste de controles, otimizando a jogabilidade tanto para teclado quanto para gamepads. Além disso, participei da implementação de efeitos sonoros (SFX), assegurando sua correta sincronização com as ações do jogo. Também contribuí para a adaptação do jogo a diferentes resoluções de tela, visando uma apresentação visual consistente em múltiplos dispositivos.
+              </span>
+              <span data-lang="en" style="display:none;">
+                In the game, I served as a programmer, responsible for the integration and adjustment of controls, optimizing gameplay for both keyboard and gamepads. Additionally, I participated in the implementation of sound effects (SFX), ensuring their correct synchronization with game actions. I also contributed to adapting the game to different screen resolutions, aiming for a consistent visual presentation across multiple devices.
+              </span>
             </p>
           </div>
           <iframe class="steam-embed" width="100%" height="187" src="https://store.steampowered.com/widget/2222540/" frameborder="0"></iframe>
@@ -88,7 +120,10 @@
     <footer class="footer container">
       <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center w-100">
         <a href="mailto:renan.rm31@gmail.com" class="text-white mb-2 mb-sm-0">renan.rm31@gmail.com</a>
-        <span class="text-white-50">Feito por Renan R. Moura</span>
+        <div class="text-white-50">
+          <span data-lang="pt">Feito por Renan R. Moura</span>
+          <span data-lang="en" style="display:none;">Made by Renan R. Moura</span>
+        </div>
       </div>
     </footer>
   </div>
